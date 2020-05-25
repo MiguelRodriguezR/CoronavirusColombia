@@ -1,5 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$main-color: #009DA6;
+$font-main-color: #F3F3F3;
+$background-color: #063E63;
+$fill-map-color: #073255;
+$select-map-color: #EE1E7E;
+$stroke-map-color: #F3F3F3;
+$info-box-background-color: #F3F3F3;
+$accent-info-box-color: #7B4D6F;
+$font-info-box-color: #6E8CA5;
+
 
 body{
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+* {
+  overflow: hidden;
+}
+
+.clickable{
+  cursor: pointer;
 }

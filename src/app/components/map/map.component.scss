@@ -1,13 +1,43 @@
+@import './src/styles.scss';
+
 .selected{
-  fill: rgba(22,120,255);
+  fill: $select-map-color !important;
 }
 
 .department{
   cursor: pointer;
+  fill: $fill-map-color;
+  stroke: $stroke-map-color;
 }
 
 .big-container{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+svg{
+  width: 100%;
+  height: 100vh;
+}
+
+.nameDep{
+  top: 0;
+  left: 0;
+  padding: 5px;
+  visibility: hidden;
+  color: #d3d3d3;
+  position: absolute;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.infoContainer{
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
 }

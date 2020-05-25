@@ -1,12 +1,16 @@
 <div class="big-container">
-  <svg height="800" width="800.0000000000001" *ngIf="departments"
-       viewBox="-13.906697373335104 0.3697248848499937 405.0000000000001 450" preserveAspectRatio="xMinYMin">
+  <svg *ngIf="departments"
+       [attr.viewBox]="getViewBox()" preserveAspectRatio="xMidYMid">
     <path *ngFor="let department of departments"
           fill="#88a4bc" stroke="#ffffff" [attr.d]="department.path"
           stroke-opacity="1" stroke-width="1.3555687500000004" stroke-linejoin="round"
           transform="matrix(0.3735,0,0,0.3735,0,0)" fill-opacity="1" class="department"
-          (mouseover)='over($event, department)' [ngClass]="{'selected': department.name == actualDepartment.name}"
+          (mouseout)="hideNameOnMouse()"
+          (mousemove)="getNameOnMouse($event, department)"
+          (click)='getDepartment($event, department)' [ngClass]="{'selected': department.name == actualDepartment.name}"
     >
     </path>
   </svg>
 </div>
+<div class="nameDep" id="nameDep"></div>
+<div #infoContainer class="infoContainer"></div>

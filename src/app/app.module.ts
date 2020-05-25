@@ -5,19 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { MapComponent } from './components/map/map.component';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
-import {NgxSvgModule} from 'ngx-svg';
+import {HttpClientModule} from '@angular/common/http';
+import { InfoPannelComponent } from './components/info-pannel/info-pannel.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     MapComponent,
-    SideBarComponent,
+    InfoPannelComponent,
   ],
   imports: [
     BrowserModule,
-    NgxSvgModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

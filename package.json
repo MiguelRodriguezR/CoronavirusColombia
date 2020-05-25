@@ -1,5 +1,6 @@
 {
   "name": "coronavirus-colombia",
+  "author": "Miguel Angel Rodriguez",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
