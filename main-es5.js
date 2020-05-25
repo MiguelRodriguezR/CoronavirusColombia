@@ -541,19 +541,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("infectado con mas edad: ", ctx_r2.department.olderInfected, " a\xF1os");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Infectado con mas edad: ", ctx_r2.department.olderInfected, " a\xF1os");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("infectado con menos edad: ", ctx_r2.department.youngerInfected, " a\xF1os");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Infectado con menos edad: ", ctx_r2.department.youngerInfected, " a\xF1os");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("fallecido con mas edad: ", ctx_r2.department.olderDeath, " a\xF1os");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Fallecido con mas edad: ", ctx_r2.department.olderDeath, " a\xF1os");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("fallecido con menos edad: ", ctx_r2.department.youngerDeath, " a\xF1os");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Fallecido con menos edad: ", ctx_r2.department.youngerDeath, " a\xF1os");
       }
     }
 

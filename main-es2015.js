@@ -281,13 +281,13 @@ function InfoPannelComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Casos en estudio: ", ctx_r2.department.onStudy, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("infectado con mas edad: ", ctx_r2.department.olderInfected, " a\u00F1os");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Infectado con mas edad: ", ctx_r2.department.olderInfected, " a\u00F1os");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("infectado con menos edad: ", ctx_r2.department.youngerInfected, " a\u00F1os");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Infectado con menos edad: ", ctx_r2.department.youngerInfected, " a\u00F1os");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("fallecido con mas edad: ", ctx_r2.department.olderDeath, " a\u00F1os");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Fallecido con mas edad: ", ctx_r2.department.olderDeath, " a\u00F1os");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("fallecido con menos edad: ", ctx_r2.department.youngerDeath, " a\u00F1os");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Fallecido con menos edad: ", ctx_r2.department.youngerDeath, " a\u00F1os");
 } }
 class InfoPannelComponent {
     constructor() {
