@@ -763,7 +763,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " *Los datos que se muestran en este sitio son un recopilatorio de informacion etregada por el Instituto Nacional de Salud a trav\xE9s de la plataforma datos abiertos del Gobierno de Colombia\n");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " *Los datos que se muestran en este sitio son un recopilatorio de informaci\xF3n facilitada por el Instituto Nacional de Salud a trav\xE9s de la plataforma datos abiertos del Gobierno de Colombia\n");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
