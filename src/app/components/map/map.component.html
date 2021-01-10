@@ -2,12 +2,14 @@
   <svg *ngIf="departments"
        [attr.viewBox]="getViewBox()" preserveAspectRatio="xMidYMid">
     <path *ngFor="let department of departments"
-          fill="#88a4bc" stroke="#ffffff" [attr.d]="department.path"
+          stroke="#ffffff" [attr.d]="department.path"
           stroke-opacity="1" stroke-width="1.3555687500000004" stroke-linejoin="round"
           transform="matrix(0.3735,0,0,0.3735,0,0)" fill-opacity="1" class="department"
           (mouseout)="hideNameOnMouse()"
           (mousemove)="getNameOnMouse($event, department)"
-          (click)='getDepartment($event, department)' [ngClass]="{'selected': department.name == actualDepartment.name}"
+          (click)='getDepartment($event, department)'
+          [ngClass]="{'selected': department.name == actualDepartment.name}"
+          [ngStyle]="{'fill': getColor(department)}"
     >
     </path>
   </svg>

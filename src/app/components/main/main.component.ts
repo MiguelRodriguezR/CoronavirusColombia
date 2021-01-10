@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {COLOR_LIMITS} from "../../shared/gradient";
 
 @Component({
   selector: 'app-main',
@@ -12,4 +13,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getGradient() {
+    return `linear-gradient(90deg, rgba(${COLOR_LIMITS.mins.r},${COLOR_LIMITS.mins.g},${COLOR_LIMITS.mins.b},1) 0%, rgba(${COLOR_LIMITS.maxs.r},${COLOR_LIMITS.maxs.g},${COLOR_LIMITS.maxs.b},1) 100%)`;
+  }
 }

@@ -1,5 +1,7 @@
 export class Departamento {
+  //DATA
   name: string;
+  dbName: string;
   infected: string;
   deaths: string;
 
@@ -16,8 +18,9 @@ export class Departamento {
 
   path: string;
 
-  constructor(name, path) {
+  constructor(name, dbName, path) {
     this.name = name;
+    this.dbName = dbName;
     this.path = path;
   }
 }

@@ -1,13 +1,15 @@
 @import './src/styles.scss';
 
 .selected{
-  fill: $select-map-color !important;
+  //fill: $main-color !important;
+  //stroke: $select-map-color !important;
 }
 
 .department{
   cursor: pointer;
   fill: $fill-map-color;
   stroke: $stroke-map-color;
+  transition: all 0.2s ease-in-out;
 }
 
 .big-container{

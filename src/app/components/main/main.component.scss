@@ -51,7 +51,37 @@
   right: 0;
 }
 
+.legend{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  .top-legend{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 0.6em;
+  }
+  .bottom-legend{
+    height: 15px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
+  .legend{
+    //width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom: 70px;
+    right: 20px;
+    left: auto;
+  }
+
   .top-frame{
     font-size: 0.7em;
     padding: 5px;

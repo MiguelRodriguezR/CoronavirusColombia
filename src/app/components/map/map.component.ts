@@ -8,6 +8,7 @@ import {INSTANCES} from '../../shared/Instances';
 import {DataService} from '../../services/data.service';
 import {InfoPannelComponent} from "../info-pannel/info-pannel.component";
 import {timer} from "rxjs/index";
+import {calculateColor} from "../../shared/gradient";
 
 @Component({
   selector: 'app-map',
@@ -26,9 +27,9 @@ export class MapComponent implements OnInit, AfterViewInit {
   width: number;
   height: number;
 
-  constructor(dataService: DataService,
+  constructor(private dataService: DataService,
               private resolver: ComponentFactoryResolver) {
-    this.actualDepartment = new Departamento('', '');
+    this.actualDepartment = new Departamento('', '', '');
   }
 
   ngOnInit(): void {
@@ -76,5 +77,9 @@ export class MapComponent implements OnInit, AfterViewInit {
     componentRef.instance.info = info;
     componentRef.instance.selfRef = componentRef;
     this.actualInfoRef = componentRef;
+  }
+
+  getColor(department: Departamento) {
+    return calculateColor(department.infected, this.dataService.maxCases, this.dataService.minCases);
   }
 }
